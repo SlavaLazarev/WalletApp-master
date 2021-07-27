@@ -1,12 +1,12 @@
 <template>
   <div class="center-align">
+<!--    <span><h2>{{info.bill | currency('YCN')}}</h2></span>-->
     <span><h2>{{info.bill}}</h2></span>
-<!-- {{info.bill | currency('YCN')}}-->
-<!--    <p-->
-<!--      v-for="currency in currencies"-->
-<!--      :key="currency">-->
+    <p
+      v-for="currency in currencies"
+      :key="currency">
 <!--      <span>{{getCurrency(currency) | currency(currency)}}</span>-->
-<!--    </p>-->
+    </p>
     <span><router-link  to="/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons black-text">add</i>
 </router-link></span>
   </div>
